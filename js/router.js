@@ -5,8 +5,6 @@ define(['domReady'], function(domReady) {
     
     var routes = {};
 
-    var page = '';
-
     var _getRouteName = function() {
 	var hash = document.location.hash || '#/';
 	return hash.substring(1);
