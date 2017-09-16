@@ -11,7 +11,6 @@ define(['domReady'], function(domReady) {
     }
     
     var _resolveRoute = function() {
-	var hash = document.location.hash || '#/';
 	var route = _getRouteName();
 	var handler = routes[route];
 	if(handler) {
