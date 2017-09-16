@@ -1,0 +1,20 @@
+#content {
+    margin-top:25px;
+}
+
+#errors div.alert {
+    margin-top:25px;
+}
+
+.row-header {
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.row {
+    padding: 5px 0;
+}
+
+.pagination {
+    margin:10px 0;
+}
