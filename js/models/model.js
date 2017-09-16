@@ -53,17 +53,16 @@ define(['config', 'axios', 'controllers/error', 'storage'], function(config, axi
     }
 
     /* 
-       update favorites from localStorage 
+       update favorites from storage
     */
     Model.prototype.updateFavorites = function() {
-	this.favorites = JSON.parse(localStorage.getItem('favorites'));
+	this.favorites = this.storage.read();
 	this.favorites = (this.favorites && this.favorites[this.service]) ? this.favorites[this.service] : [];
-
     }
 
 
     /*
-      insert and remove entity from localStorage
+      insert and remove entity from storage
     */
     Model.prototype.toggleFavorite = function(id) {
 	
