@@ -41,4 +41,4 @@ define(['domReady'], function(domReady) {
     
     return Router;
     
-})
+});

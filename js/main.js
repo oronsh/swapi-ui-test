@@ -2,7 +2,7 @@
   Create new App instance and set routes with controllers
 */
 
-require(['app'], function(App, IndexView) {
+require(['app'], function(App) {
     'use strict';
     
     var swapi = new App();
